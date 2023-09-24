@@ -1,0 +1,294 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  height:100vh;
+  background-color: #ebf0f2;
+
+}
+
+.App{
+  
+  height: 100vh;
+  width:100%;
+  
+}
+
+.hola {
+  display: flex;
+  width:20%;
+  background-color: white;
+  border-radius: 50%;
+  margin:auto;
+  margin-top: 10%;
+  height: 10%;
+}
+
+.divider{
+  background-color: #f2bf67;
+  height: 0.5%;
+  margin: 5% 40% 5% 40%;
+}
+
+.divider3{
+  background-color: #18e809;
+  height: 0.5%;
+  margin: 5% 40% 5% 40%;
+}
+
+
+.App h1{
+  
+  font-size: medium;
+  text-align: center;
+ 
+  margin-top: 5%;
+}
+
+.App h3{
+  
+  font-size: medium;
+  text-align: center;
+ 
+  margin-top: 5%;
+}
+
+.App p{
+  text-align: left;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+.boton{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 10px;
+  margin-top: 70%;
+  height: 60px;
+  
+}
+
+.boton2{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 10px;
+  margin-top: 80%;
+  height: 60px;
+  font-size: 18px;
+}
+
+.boton21{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 10px;
+  margin-top: 10%;
+  height: 60px;
+  font-size: 18px;
+}
+
+.boton3{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 8px;
+  margin-top: 35%;
+  height: 45px;
+  font-size: 18px;
+  opacity: 90%;
+}
+
+.boton35{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 8px;
+  margin-top: 70%;
+  height: 45px;
+  font-size: 18px;
+  opacity: 90%;
+}
+
+.boton34{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 8px;
+  margin-top: 58%;
+  height: 45px;
+  font-size: 18px;
+  opacity: 90%;
+}
+
+.boton36{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 8px;
+  margin-top: 75%;
+  height: 45px;
+  font-size: 18px;
+  opacity: 90%;
+}
+
+.boton37{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 8px;
+  margin-top: 80%;
+  height: 45px;
+  font-size: 18px;
+  opacity: 90%;
+}
+
+.boton38{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 8px;
+  margin-top: 55%;
+  height: 45px;
+  font-size: 18px;
+  opacity: 90%;
+}
+
+.boton39{
+  display: flex;
+  background-color: #5c6670;
+  margin:auto;
+  width:90%;
+  justify-content: center;
+  Color: white;
+  border-radius: 8px;
+  margin-top: 65%;
+  height: 45px;
+  font-size: 18px;
+  opacity: 90%;
+}
+
+.Top{
+  display:flex;
+  height: 60px;
+  background-color:#eb0029;
+  width:100%;
+  color: white;
+  justify-content: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.imagenpregunta{
+  display:flex;
+  width:45%;
+  margin: auto;
+  margin-bottom: -4%;
+  margin-top: 5%;
+}
+
+.Preguntas{
+
+width: 100%;
+margin-left: 10%;
+}
+
+.Preguntas input[type="radio"]{
+  
+  margin-top: 5%;
+  cursor: pointer;
+  width: 20px; /* Tamaño del círculo */
+  height: 20px; /* Tamaño del círculo */
+}
+
+
+input[type="radio"]:checked {
+  background-color: #eb0029; /* Cambia el fondo del círculo cuando está marcado */
+}
+
+.labelradio {
+  display: block; /* Utiliza flexbox para alinear elementos en fila */
+   /* Centra verticalmente el contenido */
+  /* Agrega espacio entre los radios y los labels */
+  align-items: center;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+.labelradio input[type="radio"] {
+  margin-right: 10px; /* Agrega espacio entre el radio y el texto del label */
+  
+}
+
+.labelradio2{
+  display:flex;
+  margin-left: 35px;
+  margin-top: 6px;
+  max-width: 300px;
+  font-size: 15px;
+}
+
+.divider2{
+  background-color: #f2bf67;
+  height: 0.5%;
+  margin:5% 40% 1% 40%;
+}
+
+.Centrar p{
+  display:flex;
+  justify-content: center !important;
+  margin:auto !important;
+  text-align: center !important; 
+  
+}
+
+.CuadroPlan{
+  background-color: white;
+  height: 300px;
+  width: 90%;
+  margin: auto;
+}
+
+spam{
+  color: red;
+  
+}
+
+
+
+
+
+
+
