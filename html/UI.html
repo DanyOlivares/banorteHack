@@ -6,14 +6,134 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script>
+            
+        </script>
     </head>
     <body>
         <header>
-            <div class="container">
-                <img src="/Images/Banorte.png"  width="auto" height="20px">
-                <img src="/Images/search.png"   width="auto" height="20px">
+            <div class="row">
+                <div class="col-2">
+                    <img src="/Images/newProfile.png" style="margin-top: 50%;" width="auto" height="30px">
+                </div>
+                <div class="col-8">
+                    <nav>
+                        <ul>
+                            <li>
+                                <h1>
+                                    Hola Estela
+                                </h1>
+                            </li>
+                            <li>
+                                <p>
+                                    Último ingreso:
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    14-09-2021 09:35:01 Via Movil
+                                </p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-2">
+                    <div class="right-align">
+                        <img src="/Images/bell.png" style="margin-top: 60%;" width="auto" height="30px">
+                    </div>
+                </div>
             </div>
         </header>
+        <div class="row">
+            <div class="col">
+                <form class="menu">
+                    <input type="radio" id="cuentas" name="opciones" value="cuentas">
+                    <label for="opcion1">Cuentas</label><br>
+                
+                    <input type="radio" id="inversiones" name="opciones" value="inversiones">
+                    <label for="opcion2">Inversiones</label><br>
+                
+                    <input type="radio" id="pagoServicios" name="opciones" value="pagoServicios">
+                    <label for="opcion3">Pago de <br>Servicios</label><br>
+                    
+                    <input type="radio" id="transferir" name="opciones" value="transferir">
+                    <label for="opcion4">Transferir</label><br>
+                    
+                    <input type="radio" id="contrata" name="opciones" value="contrata">
+                    <label for="opcion5">Contrata</label><br>
+                  </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h2>
+                        ¿Cuenta con un fondo de inversión?
+                    </h2>
+                    <a id="masInfo" class="info">Más Información</a>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-primary" style="width: 100%;">Si</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary" style="width: 100%;">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h2>
+                        ¿Está satisfecho con su fondo de inversión?
+                    </h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-primary" style="width: 100%;">Si</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary" style="width: 100%;">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h2>
+                        ¿Desea ver una nueva sugerencia nuestra?
+                    </h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-primary" style="width: 100%;">Si</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary" style="width: 100%;">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h2>
+                        ¿Desea modificar los objetivos de su fondo de inversión?
+                    </h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-primary" style="width: 100%;">Si</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary" style="width: 100%;">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
