@@ -1,0 +1,24 @@
+nav {
+  background-color:red;
+}
+
+nav ul {
+  list-style-type:none;
+  margin:none;
+  padding:none;
+  padding-inline-start: none;
+}
+
+nav ul li {
+  margin:none;
+  padding:none;
+}
+
+.imagen {
+  width:50%;
+  padding: 0.8em;
+}
+
+.tarjeta {
+  
+}
