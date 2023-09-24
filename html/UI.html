@@ -9,8 +9,26 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script>
-            
+            // Función para mostrar una tarjeta por su ID y ocultar la tarjeta actual
+            function mostrarTarjeta(id) {
+                var tarjetaActual = document.querySelector(".card:not([style='display: none;'])");
+                if (tarjetaActual) {
+                    tarjetaActual.style.display = "none";
+                }
+                document.getElementById(id).style.display = "block";
+            }
+        
+            // Función para ocultar una tarjeta por su ID
+            function ocultarTarjeta(id) {
+                document.getElementById(id).style.display = "none";
+            }
+        
+            // Función para redirigir a otro HTML
+            function redirigir() {
+                window.location.href = "otro.html"; 
+            }
         </script>
+        
     </head>
     <body>
         <header>
@@ -66,6 +84,7 @@
                   </form>
             </div>
         </div>
+
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -75,61 +94,64 @@
                     <a id="masInfo" class="info">Más Información</a>
                     <div class="row">
                         <div class="col-6">
-                            <button class="btn btn-primary" style="width: 100%;">Si</button>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="mostrarTarjeta('tarjeta2')">Si</button>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-primary" style="width: 100%;">No</button>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="redirigir()">No</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card" id="tarjeta2" style="display: none;">
                     <h2>
                         ¿Está satisfecho con su fondo de inversión?
                     </h2>
                     <div class="row">
                         <div class="col-6">
-                            <button class="btn btn-primary" style="width: 100%;">Si</button>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="mostrarTarjeta('tarjeta3')">Si</button>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-primary" style="width: 100%;">No</button>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="ocultarTarjeta('tarjeta2')">No</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card" id="tarjeta3" style="display: none;">
                     <h2>
                         ¿Desea ver una nueva sugerencia nuestra?
                     </h2>
                     <div class="row">
                         <div class="col-6">
-                            <button class="btn btn-primary" style="width: 100%;">Si</button>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="mostrarTarjeta('tarjeta4')">Si</button>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-primary" style="width: 100%;">No</button>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="ocultarTarjeta('tarjeta3')">No</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card" id="tarjeta4" style="display: none;">
                     <h2>
                         ¿Desea modificar los objetivos de su fondo de inversión?
                     </h2>
                     <div class="row">
                         <div class="col-6">
-                            <button class="btn btn-primary" style="width: 100%;">Si</button>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="redirigir()">Si</button>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-primary" style="width: 100%;">No</button>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="redirigir()">No</button>
                         </div>
                     </div>
                 </div>
